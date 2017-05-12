@@ -1,0 +1,114 @@
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit; /*Hereda de arriba*/
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+/*EFECTO BRUTAL! */
+body{
+	height: 100%;
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+	/* COLOZILLA Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+20,cfd3d6+47,1e5799+80&0+0,0.8+15,1+19,1+81,0.8+85,0+100 */
+	background: -moz-linear-gradient(-45deg, rgba(30,87,153,0) 0%, rgba(30,87,153,0.8) 15%, rgba(30,87,153,1) 19%, rgba(30,87,153,1) 20%, rgba(207,211,214,1) 47%, rgba(30,87,153,1) 80%, rgba(30,87,153,1) 81%, rgba(30,87,153,0.8) 85%, rgba(30,87,153,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(207,211,214,1) 47%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(135deg, rgba(30,87,153,0) 0%,rgba(30,87,153,0.8) 15%,rgba(30,87,153,1) 19%,rgba(30,87,153,1) 20%,rgba(207,211,214,1) 47%,rgba(30,87,153,1) 80%,rgba(30,87,153,1) 81%,rgba(30,87,153,0.8) 85%,rgba(30,87,153,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#001e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	/*HACE QUE NO SE REPITA LA IMAGEN, FIXED HACE QUE SE QUEDE ESTATICA, SE MUEVE
+	EL CONTENIDO MAS NO EL BACKGROUND, EL 100% TAMBIEN VA EN EL HTML*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+header{
+	text-align:center;
+	padding:20px 0;
+
+}
+.contenedor{
+	width: 800px;
+	margin: 0 auto;
+}
+
+/**/
+
+div.hero img{
+	width: 100%;
+}
+
+h2 {
+	text-align: center;
+	color: #000000;
+	text-transform: uppercase;
+	
+
+}
+div.productos{
+	margin-top: 30px;
+}
+ul.lista-productos {
+	list-style:none;
+	margin:0;
+	padding: 0;
+
+}
+ul.lista-productos li{
+	float: left;
+	width:50%;
+	text-align: center;
+	padding: 20px;
+	
+	
+
+
+}
+/*Ciclo en css, el n va tomando todos los numeros (posiciones)
+del li y los limpia*/
+ul.lista-productos li:nth-child(2n+1) {
+   clear: both;
+}
+
+ul.lista-productos li img{
+	border: 10px solid rgba(90,200,237,.45);
+}
+ul.lista-productos li img:hover{
+	border: 10px solid rgba(0,0,204,.5);
+}
+ul.lista-productos li p{
+	font-size: 28px;
+	font-weight: bold:
+	margin-top: 10px;	
+	margin-top: 10px;
+
+}
+ul.lista-productos li p span {
+	font-size: 40px;
+	color: #ffce00;
+	/* Entorno de letra*/
+	text-shadow:
+   -1px -1px 0 black,
+    1px -1px 0 black,
+   -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.boton {
+	background-color: #ffce00;
+	padding: 10px 40px;
+	display: inline-block;
+	margin-top: 10px;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+	font-size: 18px;
+	border: 1px solid black;
+}
+.boton:hover{
+	background-color: #FF9933;
+}
